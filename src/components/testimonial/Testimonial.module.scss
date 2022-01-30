@@ -1,0 +1,308 @@
+@import '/public/css/variables';
+@import '/public/css/mixins';
+
+.testimonial {
+  padding-top: 150px;
+
+  .client {
+    margin-top: 120px;
+    .twoWrappers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .insideSmall {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        .img {
+          border-radius: 50%;
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          background-color: #ffd6d6;
+          img {
+            width: 50px;
+          }
+          &.img1 {
+            background-color: rgb(252, 220, 193);
+          }
+          &.img2 {
+            background-color: #ffd6d6;
+          }
+          &.img3 {
+            background-color: #bdd6fc;
+          }
+          &.img4 {
+            background-color: #cbf8d1;
+          }
+        }
+        h1, h4 {
+          margin-bottom: 0;
+          margin-top: 5px;
+        }
+        h4 {
+          font-size: 18px;
+          color: $textcolor;
+        }
+        @include xs {
+          width: 350px;
+          h4 {
+            font-size: 16px;
+          }
+        }
+        @include sm {
+          h4 {
+            font-size: 16px;
+          }
+        }
+        @include md {
+          h4 {
+            font-size: 16px;
+          }
+        }
+      }
+  
+      .image {
+        background-color: #ccc;
+        height: 500px;
+        border-radius: 50% 10px 50% 50%;
+        width: 550px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+          height: 500px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.05);
+            filter: brightness(0.8);
+          }
+        }
+        .icon {
+          position: absolute;
+          @keyframes msPulseEffect {
+            0% {
+              box-shadow: 0 0 0 0px rgba(224, 224, 224, 0.9);
+            }
+            100% {
+              box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+            }
+          }
+          svg {
+            color: #fff;
+            font-size: 100px;
+            border-radius: 50%;
+            animation: msPulseEffect 1.2s infinite;
+          }
+        }
+        @include xs {
+          height: 350px;
+          width: 350px;
+        }
+        @include sm {
+          height: 450px;
+          width: 450px;
+        }
+        @include md {
+          height: 450px;
+          width: 450px;
+        }
+      }
+
+      @include xs {
+        margin-top: -100px;
+        flex-direction: column-reverse;
+      }
+      @include sm {
+        margin-top: -100px;
+        flex-direction: column-reverse;
+      }
+
+    }
+
+  }
+
+  .happyClients {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    .carousel {
+      position: static;
+      &:hover {
+        button {
+          opacity: 1;
+        }
+      }
+    }
+    .slide {
+      background-color: #fff;
+      margin: 10px;
+      padding: 40px 25px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      cursor: grabbing;
+      text-align: left;
+      h4 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      p {
+        color: $textcolor;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-right: 15px;
+        }
+        .info {
+          h4, p {
+            margin: 0;
+          }
+          p {
+            font-size: 14px;
+            color: $secondarycolor;
+          }
+        }
+      }
+    }
+    button {
+      background-color: #fff;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      width: 55px;
+      height: 55px;
+      opacity: 0;
+      &:before {
+        color: rgb(63, 63, 63);
+        font-weight: bold;
+        font-size: 17px;
+      }
+      @include xs {
+        width: 40px;
+        height: 40px;
+        &:before {
+          font-size: 15px;
+        }
+      }
+      @include sm {
+        width: 40px;
+        height: 40px;
+        &:before {
+          font-size: 15px;
+        }
+      }
+    }
+    @include xs {
+      margin-top: 150px;
+      margin-bottom: 150px;
+    }
+  }
+
+  .blog {
+    margin-bottom: 150px;
+    .blogInside {
+      background-color: $secondarycolor;
+      border-radius: 10px;
+      color: #fff;
+      padding: 30px;
+      .text {
+        width: 70%;
+        margin: auto;
+        h2 {
+          font-size: 25px;
+        }
+      }
+      .input {
+        margin: 40px auto;
+        width: 60%;
+        height: 70px;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+        input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          outline: none;
+          font-size: 18px;
+          padding: 0 30px;
+        }
+        button {
+          position: absolute;
+          right: 0;
+          height: 100%;
+          width: 150px;
+          border-radius: 40px;
+          background-color: $secondarycolor;
+          color: #fff;
+          border: 4px solid #fff;
+          cursor: pointer;
+          font-size: 17px;
+          &:hover {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+    @include xs {
+      margin-bottom: 150px;
+      .blogInside {
+        .text {
+          width: 90%;
+          h2 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .input {
+          width: 95%;
+          height: 50px;
+          input {
+            font-size: 16px;
+            padding: 0 20px;
+          }
+          button {
+            font-size: 15px;
+            width: 120px;
+          }
+        }
+      }
+    }
+    
+    @include sm {
+      .blogInside {
+        .text {
+          width: 80%;
+        }
+        .input {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  @include xs {
+    padding-top: 50px;
+  }
+  @include sm {
+    padding-top: 50px;
+  }
+  @include md {
+    padding-top: 70px;
+  }
+}

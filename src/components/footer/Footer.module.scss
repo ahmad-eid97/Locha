@@ -1,0 +1,68 @@
+@import '/public/css/variables';
+@import '/public/css/mixins';
+
+.footer {
+  border-top: 1px solid rgb(224, 224, 224);
+  padding: 30px;
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 45px;
+      height: 45px;
+      margin-right: 10px;
+    }
+    h2 {
+      font-size: 20px;
+      span {
+        color: $secondarycolor;
+      }
+    }
+    @include xs {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+  .info {
+    .footerList {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      li {
+        padding: 5px 15px;
+        color: $textcolor;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $secondarycolor;
+        }
+      }
+    }
+    @include xs {
+      .footerList {
+        li {
+          font-size: 13px;
+          padding: 5px 5px;
+        }
+      }
+    }
+  }
+
+  .me {
+    span {
+      font-weight: bold;
+      color: $secondarycolor;
+    }
+    @include xs {
+      font-size: 15px;
+    }
+  }
+}
