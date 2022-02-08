@@ -18,9 +18,9 @@ const Features = () => {
     <section className={classes.features} id="features">
 
       {/* SECTION LABEL */}
-      <h4 className="slogan">WHAT'S GOING ON HERE !?</h4>
-      <h1 className='sectionLabel'>Our Products Awesome Features</h1>
-      <p className='underHeader'></p>
+      <h4 className="slogan">WHAT&lsquo;S GOING ON HERE !?</h4>
+      <h1 className="sectionLabel">Our Products Awesome Features</h1>
+      <p className="underHeader"></p>
 
       {/* SECTION CONTENT */}
       <div className={classes.feats}>
@@ -67,7 +67,7 @@ const Features = () => {
               <img className={classes.blob} src="/images/features/blob.svg" alt="" />
             </Grid>
             <Grid item md={6} className={classes.textSide}>
-              <h2>Don't worry you will not pay too much for our awesome services...</h2>
+              <h2>Don&lsquo;t worry you will not pay too much for our awesome services...</h2>
               <p>There several ways to get free services with us but also you can find awesome paid services that will make your life on fire, be with us...</p>
               <div className={`${classes.icon} ${classes.icon1}`}>
                 <AddShoppingCartIcon />

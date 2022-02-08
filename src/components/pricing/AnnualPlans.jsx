@@ -39,7 +39,7 @@ const AnnualPlans = () => {
                 </ListItem>
                 <ListItem>
                   <CheckCircleIcon />
-                  1,000's of Templates
+                  1,000&lsquo;s of Templates
                 </ListItem>
                 <ListItem>
                   <CheckCircleIcon />
@@ -84,7 +84,7 @@ const AnnualPlans = () => {
                 </ListItem>
                 <ListItem>
                   <CheckCircleIcon />
-                  1,000's of Templates
+                  1,000&lsquo;s of Templates
                 </ListItem>
                 <ListItem>
                   <CheckCircleIcon />
@@ -132,7 +132,7 @@ const AnnualPlans = () => {
                 </ListItem>
                 <ListItem>
                   <CheckCircleIcon />
-                  1,000's of Templates
+                  1,000&lsquo;s of Templates
                 </ListItem>
                 <ListItem>
                   <CheckCircleIcon />
